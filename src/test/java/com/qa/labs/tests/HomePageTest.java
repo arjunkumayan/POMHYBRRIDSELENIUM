@@ -5,32 +5,41 @@ import java.util.Properties;
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 import com.qa.labs.base.BasePage;
+import com.qa.labs.base.BaseTest;
 import com.qa.labs.pages.HomePage;
 import com.qa.labs.pages.LoginPage;
 import com.qa.labs.util.Constants;
 
-public class HomePageTest {
-	WebDriver driver;
-	BasePage basePage;
-	LoginPage loginPage;	
+public class HomePageTest extends BaseTest{
 	HomePage homePage;
-	Properties prop;
 	
-	@BeforeTest
-	public void setUp() {
-		basePage = new BasePage();
-		prop = basePage.init_prop();
-		driver = basePage.init_driver(prop.getProperty("browser"));
-		loginPage = new LoginPage(driver);
-		//homePage= new HomePage(driver);
-		homePage = loginPage.doLogin(prop.getProperty("username"), prop.getProperty("password"));
-		
-	}
+//	WebDriver driver;
+//	BasePage basePage;
+//	LoginPage loginPage;	
+//	HomePage homePage;
+//	Properties prop;
+//	
+//	@BeforeTest
+//	public void setUp() {
+//		basePage = new BasePage();
+//		prop = basePage.init_prop();
+//		driver = basePage.init_driver(prop.getProperty("browser"));
+//		loginPage = new LoginPage(driver);
+//		//homePage= new HomePage(driver);
+//		homePage = loginPage.doLogin(prop.getProperty("username"), prop.getProperty("password"));
+//		
+//	}
 
+	
+	@BeforeClass
+	public void homeSetUp() {
+		homePage = loginPage.doLogin(prop.getProperty("username"), prop.getProperty("password"));
+	}
 	
 	@Test(priority=3)
 	public void verifyHomePageTitle() {
@@ -53,11 +62,11 @@ public class HomePageTest {
 		Assert.assertEquals(loggedInUser, prop.getProperty("accountName"),"Logged in user is not matched");
 		}
 	
-	@AfterTest
-	public void tearDown() {
-		driver.quit();
-	}
-	
+//	@AfterTest
+//	public void tearDown() {
+//		driver.quit();
+//	}
+//	
 	
 	
 }

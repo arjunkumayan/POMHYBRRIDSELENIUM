@@ -11,24 +11,25 @@ import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 import com.qa.labs.base.BasePage;
+import com.qa.labs.base.BaseTest;
 import com.qa.labs.pages.LoginPage;
 import com.qa.labs.util.Constants;
 
 
 
-public class LoginPageTest {
-	WebDriver driver;
-	BasePage basePage;
-	LoginPage loginPage;
-	Properties  prop;
+public class LoginPageTest extends BaseTest {
+//	WebDriver driver;
+//	BasePage basePage;
+//	LoginPage loginPage;
+//	Properties  prop;
 	
-	@BeforeTest
-	public void setUp() {
-		basePage = new BasePage();
-		prop = basePage.init_prop();
-		driver = basePage.init_driver(prop.getProperty("browser"));
-		loginPage = new LoginPage(driver);		
-	}
+//	@BeforeTest
+//	public void setUp() {
+//		basePage = new BasePage();
+//		prop = basePage.init_prop();
+//		driver = basePage.init_driver(prop.getProperty("browser"));
+//		loginPage = new LoginPage(driver);		
+//	}
 	
 	@Test(priority=2)
 	public void verifyLoginPageTitle() {
@@ -47,11 +48,11 @@ public class LoginPageTest {
 		loginPage.doLogin(prop.getProperty("username"), prop.getProperty("password"));
 	}
 	
-	@AfterTest
-	public void tearDown() {
-		driver.quit();
-	}
-	
+//	@AfterTest
+//	public void tearDown() {
+//		driver.quit();
+//	}
+//	
 	
 	
 	
