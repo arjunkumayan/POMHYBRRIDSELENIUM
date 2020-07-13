@@ -1,17 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.qa.labs.tests.HomePageTest">
+      <class name="com.qa.labs.tests.ContactsPageTest">
         <methods>
-          <include name="verifyHomePageHeader"/>
-          <include name="setUp"/>
+          <include name="ContactsSetUp"/>
+          <include name="createContactTest" invocation-numbers="0"/>
           <include name="tearDown"/>
-          <include name="verifyHomePageTitle"/>
-          <include name="verifyLoggedInUserText"/>
+          <include name="setUp"/>
         </methods>
-      </class> <!-- com.qa.labs.tests.HomePageTest -->
+      </class> <!-- com.qa.labs.tests.ContactsPageTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -19,7 +19,7 @@ public class BaseTest {
 	public void setUp() {
 		basePage = new BasePage();
 		prop = basePage.init_prop();
-		driver = basePage.init_driver(prop.getProperty("browser"));
+		driver = basePage.init_driver(prop);
 		loginPage = new LoginPage(driver);		
 	}
 

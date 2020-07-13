@@ -9,5 +9,9 @@ public class Constants {
 
 	public static final int POLLING_TIME_PERIOD=10;
 	
+	//**********************************Sheet Name *************************
+	
+	public static final String CONTACTS_SHEET_NAME="contacts";
+	
 
 }

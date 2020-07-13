@@ -1,31 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite thread-count="3" guice-stage="DEVELOPMENT" verbose="3" name="Failed suite [Hub Spot Regression Suite]" parallel="tests">
-  <test thread-count="3" verbose="3" name="Contacts page test(failed)" parallel="tests">
+<suite thread-count="3" guice-stage="DEVELOPMENT" verbose="3" name="Failed suite [Hub Spot test automation Regression Suite]" parallel="tests">
+  <listeners>
+    <listener class-name="com.qa.labs.listeners.ScreenshotListener"/>
+  </listeners>
+  <test thread-count="3" verbose="3" name="login page test(failed)" parallel="tests">
     <classes>
-      <class name="com.qa.labs.tests.ContactsPageTest">
+      <class name="com.qa.labs.tests.LoginPageTest">
         <methods>
-          <include name="ContactsSetUp"/>
-          <include name="createContactTest"/>
+          <include name="verifyLoginPageTitle"/>
           <include name="tearDown"/>
           <include name="setUp"/>
-          <include name="verifyContactsPageTitleTest"/>
+          <include name="loginTest"/>
         </methods>
-      </class> <!-- com.qa.labs.tests.ContactsPageTest -->
+      </class> <!-- com.qa.labs.tests.LoginPageTest -->
     </classes>
-  </test> <!-- Contacts page test(failed) -->
-  <test thread-count="3" verbose="3" name="home page test(failed)" parallel="tests">
-    <classes>
-      <class name="com.qa.labs.tests.HomePageTest">
-        <methods>
-          <include name="verifyHomePageHeader"/>
-          <include name="tearDown"/>
-          <include name="setUp"/>
-          <include name="verifyHomePageTitle"/>
-          <include name="homeSetUp"/>
-          <include name="verifyLoggedInUserText"/>
-        </methods>
-      </class> <!-- com.qa.labs.tests.HomePageTest -->
-    </classes>
-  </test> <!-- home page test(failed) -->
-</suite> <!-- Failed suite [Hub Spot Regression Suite] -->
+  </test> <!-- login page test(failed) -->
+</suite> <!-- Failed suite [Hub Spot test automation Regression Suite] -->

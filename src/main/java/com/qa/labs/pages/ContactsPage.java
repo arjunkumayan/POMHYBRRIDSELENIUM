@@ -19,6 +19,8 @@ public class ContactsPage extends BasePage {
 	By jobtitle = By.xpath("//input[@data-field='jobtitle']");
 	By createContactSecondary = By.xpath("(//span[text()='Create contact'])[last()]");
 	
+	By ContactsBackClick = By.xpath("(//*[text()='Contacts'])[position()=1]");
+	
 	
 	public ContactsPage(WebDriver driver) {
 		this.driver= driver;
@@ -38,20 +40,44 @@ public class ContactsPage extends BasePage {
 	
 	
 	public void createContact(String email, String firstName,String lastName,String jobTitle) {
-		elementUtil.waitForElementToBeVisible(createContactPrimary, 10);
-		elementUtil.doClick(createContactPrimary);
 		
+		try {
+			Thread.sleep(3000);
+		} catch (InterruptedException e) {
+			
+			e.printStackTrace();
+		}
+//		elementUtil.waitForElementToBeVisible(createContactPrimary, 20);
+//		elementUtil.doClick(createContactPrimary);
+//		
+//		
+//		elementUtil.waitForElementToBeVisible(email1, 20);
+//		elementUtil.doSendKeys(email1, email);
+//		elementUtil.doSendKeys(firstName1, firstName);
+//		elementUtil.doSendKeys(lastName1, lastName);
+//		
+//		elementUtil.waitForElementToBeVisible(jobtitle1, 5);
+//		elementUtil.doSendKeys(this.jobtitle, jobTitle);
+//		
+//		elementUtil.clickWhenReady(createContactSecondary, 10);
+//		
+//		elementUtil.doClick(ContactsBackClick);
 		
-		elementUtil.waitForElementToBeVisible(this.email, 5);
+		elementUtil.clickWhenReady(createContactPrimary, 20);
 		elementUtil.doSendKeys(this.email, email);
 		elementUtil.doSendKeys(this.firstName, firstName);
 		elementUtil.doSendKeys(this.lastName, lastName);
 		
-		elementUtil.waitForElementToBeVisible(this.jobtitle, 5);
+		try {
+			Thread.sleep(2000);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
 		elementUtil.doSendKeys(this.jobtitle, jobTitle);
-		
-		elementUtil.clickWhenReady(createContactSecondary, 10);
-		
+
+		elementUtil.doActionsClick(createContactSecondary);
+		elementUtil.clickWhenReady(ContactsBackClick, 20);
+		//elementUtil.doActionsClick(ContactsBackClick);
 	}
 	
 	

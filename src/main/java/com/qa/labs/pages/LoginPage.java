@@ -7,6 +7,8 @@ import com.qa.labs.base.BasePage;
 import com.qa.labs.util.Constants;
 import com.qa.labs.util.ElementUtil;
 
+import io.qameta.allure.Step;
+
 public class LoginPage extends BasePage{
 	
 	private WebDriver driver; // only for Login page,, don't want to change this driver
@@ -29,28 +31,33 @@ public class LoginPage extends BasePage{
 	
 	//3. page actions:
 	
+	@Step("get Login page title......")
 	public String getLoginPageTitle() {
 		//return driver.getTitle();
 		return elementUtil.waitForTitleToBePresent(Constants.LOGIN_PAGE_TITLE, 10);
 	}
 		
+	@Step("check sign up link on login page......")	
 	public boolean verifyLogiSignUpLink() {		
 		//return driver.findElement(signUpLink).isDisplayed();
 		return elementUtil.doIsDisplayed(signUpLink);
 	}
 	
+	@Step("login to app with username: {0} and password: {1}")	
 	public HomePage doLogin(String username,String password) {
 //		driver.findElement(this.username).sendKeys(username);
 //		driver.findElement(this.password).sendKeys(password);
 //		driver.findElement(this.loginBtn).click();
 		
-		elementUtil.waitForElementToBeVisible(this.username, 10);
+		elementUtil.waitForTitleToBePresent(Constants.LOGIN_PAGE_TITLE, 20);
+		elementUtil.waitForElementToBeVisible(this.username, 20);
 		elementUtil.doSendKeys(this.username, username);
 		elementUtil.doSendKeys(this.password, password);
 		elementUtil.doClick(loginBtn);
 		
 		return new HomePage(driver);
 	}
+	
 	
 	
 	

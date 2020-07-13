@@ -21,7 +21,8 @@ public class HomePage extends BasePage {
 	By userName= By.className("user-info-name");
 	
 	
-	By primaryContactLink = By.id("nav-primary-contacts-branch");
+	//By primaryContactLink = By.id("nav-primary-contacts-branch");
+	By primaryContactLink = By.xpath("(//a[@id='nav-primary-contacts-branch'])[1]");
 	By secondaryContactLink = By.id("nav-secondary-contacts");
 	
 	public HomePage(WebDriver driver) {
@@ -67,8 +68,9 @@ public class HomePage extends BasePage {
 	}
 	
 	private void clickOnContacts() {
-		elementUtil.waitForElementToBeVisible(primaryContactLink, 10);
-		elementUtil.doClick(primaryContactLink);
+		//elementUtil.waitForElementToBeVisible(primaryContactLink, 20);
+		elementUtil.doActionsClick(primaryContactLink);
+		//elementUtil.doClick(primaryContactLink);
 		elementUtil.waitForElementToBeVisible(secondaryContactLink, 5);
 		elementUtil.doClick(secondaryContactLink);
 	}
