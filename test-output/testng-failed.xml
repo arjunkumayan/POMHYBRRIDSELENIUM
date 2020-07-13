@@ -4,16 +4,34 @@
   <listeners>
     <listener class-name="com.qa.labs.listeners.ScreenshotListener"/>
   </listeners>
-  <test thread-count="3" verbose="3" name="login page test(failed)" parallel="tests">
+  <test thread-count="3" verbose="3" name="Firefox test(failed)" parallel="tests">
+    <parameter name="browser" value="firefox"/>
     <classes>
-      <class name="com.qa.labs.tests.LoginPageTest">
+      <class name="com.qa.labs.tests.HomePageTest">
         <methods>
-          <include name="verifyLoginPageTitle"/>
+          <include name="verifyHomePageHeader"/>
           <include name="tearDown"/>
           <include name="setUp"/>
-          <include name="loginTest"/>
+          <include name="verifyHomePageTitle"/>
+          <include name="homeSetUp"/>
+          <include name="verifyLoggedInUserText"/>
         </methods>
-      </class> <!-- com.qa.labs.tests.LoginPageTest -->
+      </class> <!-- com.qa.labs.tests.HomePageTest -->
     </classes>
-  </test> <!-- login page test(failed) -->
+  </test> <!-- Firefox test(failed) -->
+  <test thread-count="3" verbose="3" name="Chrome test(failed)" parallel="tests">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.qa.labs.tests.HomePageTest">
+        <methods>
+          <include name="verifyHomePageHeader"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="verifyHomePageTitle"/>
+          <include name="homeSetUp"/>
+          <include name="verifyLoggedInUserText"/>
+        </methods>
+      </class> <!-- com.qa.labs.tests.HomePageTest -->
+    </classes>
+  </test> <!-- Chrome test(failed) -->
 </suite> <!-- Failed suite [Hub Spot test automation Regression Suite] -->

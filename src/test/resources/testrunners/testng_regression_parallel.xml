@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Hub Spot test automation Regression Suite" thread-count="3" parallel="tests" verbose ="3">
+
+    <listeners> 
+        <!--  <listener class-name="com.qa.labs.listeners.ExtentReportListener"/>  -->
+         <!--  <listener class-name="com.qa.labs.listeners.pdfListener" />  -->
+        <!--  <listener class-name="com.qa.labs.listeners.TestAllureListener"/>-->
+         
+        <!-- <listener class-name="com.qa.labs.listeners.TesultsListener"/> -->
+		   <listener class-name="com.qa.labs.listeners.ScreenshotListener"/>
+		 </listeners>
+		
+	<test name="Chrome test">
+	<parameter name="browser" value="chrome" />
+		<classes>
+			<class name="com.qa.labs.tests.LoginPageTest" />
+			<class name="com.qa.labs.tests.HomePageTest" />
+		</classes>
+	</test>
+	
+	  <test name="Firefox test">
+	  <parameter name="browser" value="firefox" />
+		<classes>
+		    <class name="com.qa.labs.tests.LoginPageTest" />
+		 	<class name="com.qa.labs.tests.HomePageTest" />
+		</classes>
+
+	</test>
+	
+	<!-- <test name="Contacts page test">
+		<classes>
+			<class name="com.qa.labs.tests.ContactsPageTest" />
+		</classes>
+
+	</test>  -->
+
+
+</suite>

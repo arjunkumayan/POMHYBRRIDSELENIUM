@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-Hub_Spot_test_automation_Regression_Suite">
-              <span class="suite-name border-failed">Hub Spot test automation Regression Suite</span>
+              <span class="suite-name border-skipped">Hub Spot test automation Regression Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -49,12 +49,12 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-Hub_Spot_test_automation_Regression_Suite">
-                    <span>D:\Users\asingh6766\eclipse-workspace\POMHybridSeleniumFramework\src\test\resources\testrunners\testng_regression.xml</span>
+                    <span>D:\Users\asingh6766\eclipse-workspace\POMHybridSeleniumFramework\src\test\resources\testrunners\testng_regression_parallel.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
                   <a href="#" class="navigator-link " panel-name="testlist-Hub_Spot_test_automation_Regression_Suite">
-                    <span class="test-stats">1 test</span>
+                    <span class="test-stats">2 tests</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -91,26 +91,46 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">3 methods, 2 failed,   1 passed</span>
+                    <span class="method-stats">12 methods,  6 skipped,  6 passed</span>
                   </li>
                   <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-Hub_Spot_test_automation_Regression_Suite" class="hide-methods failed suite-Hub_Spot_test_automation_Regression_Suite"> (hide)</a> <!-- hide-methods failed suite-Hub_Spot_test_automation_Regression_Suite -->
-                      <a href="#" panel-name="suite-Hub_Spot_test_automation_Regression_Suite" class="show-methods failed suite-Hub_Spot_test_automation_Regression_Suite"> (show)</a> <!-- show-methods failed suite-Hub_Spot_test_automation_Regression_Suite -->
+                    <span class="method-list-title skipped">Skipped methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-Hub_Spot_test_automation_Regression_Suite" class="hide-methods skipped suite-Hub_Spot_test_automation_Regression_Suite"> (hide)</a> <!-- hide-methods skipped suite-Hub_Spot_test_automation_Regression_Suite -->
+                      <a href="#" panel-name="suite-Hub_Spot_test_automation_Regression_Suite" class="show-methods skipped suite-Hub_Spot_test_automation_Regression_Suite"> (show)</a> <!-- show-methods skipped suite-Hub_Spot_test_automation_Regression_Suite -->
                     </span>
-                    <div class="method-list-content failed suite-Hub_Spot_test_automation_Regression_Suite">
+                    <div class="method-list-content skipped suite-Hub_Spot_test_automation_Regression_Suite">
                       <span>
-                        <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Hub_Spot_test_automation_Regression_Suite" title="com.qa.labs.tests.LoginPageTest" hash-for-method="loginTest">loginTest</a> <!-- method navigator-link -->
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Hub_Spot_test_automation_Regression_Suite" title="com.qa.labs.tests.HomePageTest" hash-for-method="verifyHomePageHeader">verifyHomePageHeader</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Hub_Spot_test_automation_Regression_Suite" title="com.qa.labs.tests.LoginPageTest" hash-for-method="verifyLoginPageTitle">verifyLoginPageTitle</a> <!-- method navigator-link -->
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Hub_Spot_test_automation_Regression_Suite" title="com.qa.labs.tests.HomePageTest" hash-for-method="verifyHomePageHeader">verifyHomePageHeader</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content failed suite-Hub_Spot_test_automation_Regression_Suite -->
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Hub_Spot_test_automation_Regression_Suite" title="com.qa.labs.tests.HomePageTest" hash-for-method="verifyHomePageTitle">verifyHomePageTitle</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Hub_Spot_test_automation_Regression_Suite" title="com.qa.labs.tests.HomePageTest" hash-for-method="verifyHomePageTitle">verifyHomePageTitle</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Hub_Spot_test_automation_Regression_Suite" title="com.qa.labs.tests.HomePageTest" hash-for-method="verifyLoggedInUserText">verifyLoggedInUserText</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Hub_Spot_test_automation_Regression_Suite" title="com.qa.labs.tests.HomePageTest" hash-for-method="verifyLoggedInUserText">verifyLoggedInUserText</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-Hub_Spot_test_automation_Regression_Suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -119,6 +139,31 @@
                       <a href="#" panel-name="suite-Hub_Spot_test_automation_Regression_Suite" class="show-methods passed suite-Hub_Spot_test_automation_Regression_Suite"> (show)</a> <!-- show-methods passed suite-Hub_Spot_test_automation_Regression_Suite -->
                     </span>
                     <div class="method-list-content passed suite-Hub_Spot_test_automation_Regression_Suite">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Hub_Spot_test_automation_Regression_Suite" title="com.qa.labs.tests.LoginPageTest" hash-for-method="loginTest">loginTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Hub_Spot_test_automation_Regression_Suite" title="com.qa.labs.tests.LoginPageTest" hash-for-method="loginTest">loginTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Hub_Spot_test_automation_Regression_Suite" title="com.qa.labs.tests.LoginPageTest" hash-for-method="verifyLoginPageTitle">verifyLoginPageTitle</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Hub_Spot_test_automation_Regression_Suite" title="com.qa.labs.tests.LoginPageTest" hash-for-method="verifyLoginPageTitle">verifyLoginPageTitle</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Hub_Spot_test_automation_Regression_Suite" title="com.qa.labs.tests.LoginPageTest" hash-for-method="verifySignUlLinkTest">verifySignUlLinkTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Hub_Spot_test_automation_Regression_Suite" title="com.qa.labs.tests.LoginPageTest" hash-for-method="verifySignUlLinkTest">verifySignUlLinkTest</a> <!-- method navigator-link -->
@@ -136,38 +181,30 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Hub_Spot_test_automation_Regression_Suite" class="panel Hub_Spot_test_automation_Regression_Suite">
-          <div class="suite-Hub_Spot_test_automation_Regression_Suite-class-failed">
+          <div class="suite-Hub_Spot_test_automation_Regression_Suite-class-skipped">
             <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">com.qa.labs.tests.LoginPageTest</span>
+              <img src="skipped.png"/>
+              <span class="class-name">com.qa.labs.tests.HomePageTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="loginTest">
-                  </a> <!-- loginTest -->
-                  <span class="method-name">loginTest</span>
-                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for title to contain &quot;HubSpot Login123&quot;. Current title: &quot;HubSpot Login&quot; (tried for 20 second(s) with 500 milliseconds interval)
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;AIPL2361LT06766&apos;, ip: &apos;192.168.0.6&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_144&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.116, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: D:\Users\ASINGH~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:56721}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 4f33e90d6563884a15b68f79e0d54520
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
-	at com.qa.labs.util.ElementUtil.waitForTitleToBePresent(ElementUtil.java:233)
-	at com.qa.labs.pages.LoginPage.doLogin(LoginPage.java:52)
-	at com.qa.labs.tests.LoginPageTest.loginTest(LoginPageTest.java:67)
+                  <a name="verifyHomePageHeader">
+                  </a> <!-- verifyHomePageHeader -->
+                  <span class="method-name">verifyHomePageHeader</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at com.qa.labs.tests.HomePageTest.homeSetUp(HomePageTest.java:41)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.lang.reflect.Method.invoke(Method.java:498)
 	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:168)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:105)
 	at org.testng.TestRunner.privateRun(TestRunner.java:648)
 	at org.testng.TestRunner.run(TestRunner.java:505)
 	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
@@ -184,30 +221,150 @@ Session ID: 4f33e90d6563884a15b68f79e0d54520
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="verifyLoginPageTitle">
-                  </a> <!-- verifyLoginPageTitle -->
-                  <span class="method-name">verifyLoginPageTitle</span>
-                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for title to contain &quot;HubSpot Login123&quot;. Current title: &quot;HubSpot Login&quot; (tried for 10 second(s) with 500 milliseconds interval)
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;AIPL2361LT06766&apos;, ip: &apos;192.168.0.6&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_144&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.116, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: D:\Users\ASINGH~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:56721}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 4f33e90d6563884a15b68f79e0d54520
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
-	at com.qa.labs.util.ElementUtil.waitForTitleToBePresent(ElementUtil.java:233)
-	at com.qa.labs.pages.LoginPage.getLoginPageTitle(LoginPage.java:37)
-	at com.qa.labs.tests.LoginPageTest.verifyLoginPageTitle(LoginPageTest.java:49)
+                  <a name="verifyHomePageHeader">
+                  </a> <!-- verifyHomePageHeader -->
+                  <span class="method-name">verifyHomePageHeader</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at com.qa.labs.tests.HomePageTest.homeSetUp(HomePageTest.java:41)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.lang.reflect.Method.invoke(Method.java:498)
 	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:168)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:105)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyHomePageTitle">
+                  </a> <!-- verifyHomePageTitle -->
+                  <span class="method-name">verifyHomePageTitle</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at com.qa.labs.tests.HomePageTest.homeSetUp(HomePageTest.java:41)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:168)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:105)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyHomePageTitle">
+                  </a> <!-- verifyHomePageTitle -->
+                  <span class="method-name">verifyHomePageTitle</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at com.qa.labs.tests.HomePageTest.homeSetUp(HomePageTest.java:41)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:168)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:105)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyLoggedInUserText">
+                  </a> <!-- verifyLoggedInUserText -->
+                  <span class="method-name">verifyLoggedInUserText</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at com.qa.labs.tests.HomePageTest.homeSetUp(HomePageTest.java:41)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:168)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:105)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyLoggedInUserText">
+                  </a> <!-- verifyLoggedInUserText -->
+                  <span class="method-name">verifyLoggedInUserText</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at com.qa.labs.tests.HomePageTest.homeSetUp(HomePageTest.java:41)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:168)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:105)
 	at org.testng.TestRunner.privateRun(TestRunner.java:648)
 	at org.testng.TestRunner.run(TestRunner.java:505)
 	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
@@ -223,13 +380,48 @@ Session ID: 4f33e90d6563884a15b68f79e0d54520
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Hub_Spot_test_automation_Regression_Suite-class-failed -->
+          </div> <!-- suite-Hub_Spot_test_automation_Regression_Suite-class-skipped -->
           <div class="suite-Hub_Spot_test_automation_Regression_Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
               <span class="class-name">com.qa.labs.tests.LoginPageTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginTest">
+                  </a> <!-- loginTest -->
+                  <span class="method-name">loginTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginTest">
+                  </a> <!-- loginTest -->
+                  <span class="method-name">loginTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyLoginPageTitle">
+                  </a> <!-- verifyLoginPageTitle -->
+                  <span class="method-name">verifyLoginPageTitle</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyLoginPageTitle">
+                  </a> <!-- verifyLoginPageTitle -->
+                  <span class="method-name">verifyLoginPageTitle</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifySignUlLinkTest">
+                  </a> <!-- verifySignUlLinkTest -->
+                  <span class="method-name">verifySignUlLinkTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
                   <a name="verifySignUlLinkTest">
@@ -242,7 +434,7 @@ Session ID: 4f33e90d6563884a15b68f79e0d54520
         </div> <!-- panel Hub_Spot_test_automation_Regression_Suite -->
         <div panel-name="test-xml-Hub_Spot_test_automation_Regression_Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">D:\Users\asingh6766\eclipse-workspace\POMHybridSeleniumFramework\src\test\resources\testrunners\testng_regression.xml</span>
+            <span class="header-content">D:\Users\asingh6766\eclipse-workspace\POMHybridSeleniumFramework\src\test\resources\testrunners\testng_regression_parallel.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -252,11 +444,20 @@ Session ID: 4f33e90d6563884a15b68f79e0d54520
   &lt;listeners&gt;
     &lt;listener class-name=&quot;com.qa.labs.listeners.ScreenshotListener&quot;/&gt;
   &lt;/listeners&gt;
-  &lt;test thread-count=&quot;3&quot; verbose=&quot;3&quot; name=&quot;login page test&quot; parallel=&quot;tests&quot;&gt;
+  &lt;test thread-count=&quot;3&quot; verbose=&quot;3&quot; name=&quot;Chrome test&quot; parallel=&quot;tests&quot;&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
     &lt;classes&gt;
       &lt;class name=&quot;com.qa.labs.tests.LoginPageTest&quot;/&gt;
+      &lt;class name=&quot;com.qa.labs.tests.HomePageTest&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- login page test --&gt;
+  &lt;/test&gt; &lt;!-- Chrome test --&gt;
+  &lt;test thread-count=&quot;3&quot; verbose=&quot;3&quot; name=&quot;Firefox test&quot; parallel=&quot;tests&quot;&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;firefox&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.qa.labs.tests.LoginPageTest&quot;/&gt;
+      &lt;class name=&quot;com.qa.labs.tests.HomePageTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Firefox test --&gt;
 &lt;/suite&gt; &lt;!-- Hub Spot test automation Regression Suite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -268,7 +469,10 @@ Session ID: 4f33e90d6563884a15b68f79e0d54520
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">login page test (1 class)</span>
+                <span class="test-name">Chrome test (2 classes)</span>
+              </li>
+              <li>
+                <span class="test-name">Firefox test (2 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -294,24 +498,60 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(3);
+data.addRows(12);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'loginTest')
+data.setCell(0, 1, 'verifySignUlLinkTest')
 data.setCell(0, 2, 'com.qa.labs.tests.LoginPageTest')
-data.setCell(0, 3, 20244);
+data.setCell(0, 3, 8006);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'verifyLoginPageTitle')
+data.setCell(1, 1, 'verifySignUlLinkTest')
 data.setCell(1, 2, 'com.qa.labs.tests.LoginPageTest')
-data.setCell(1, 3, 10474);
+data.setCell(1, 3, 7656);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'verifySignUlLinkTest')
+data.setCell(2, 1, 'loginTest')
 data.setCell(2, 2, 'com.qa.labs.tests.LoginPageTest')
-data.setCell(2, 3, 7486);
+data.setCell(2, 3, 1547);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'loginTest')
+data.setCell(3, 2, 'com.qa.labs.tests.LoginPageTest')
+data.setCell(3, 3, 1322);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'verifyLoginPageTitle')
+data.setCell(4, 2, 'com.qa.labs.tests.LoginPageTest')
+data.setCell(4, 3, 274);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'verifyLoginPageTitle')
+data.setCell(5, 2, 'com.qa.labs.tests.LoginPageTest')
+data.setCell(5, 3, 52);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'verifyLoggedInUserText')
+data.setCell(6, 2, 'com.qa.labs.tests.HomePageTest')
+data.setCell(6, 3, 0);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'verifyHomePageTitle')
+data.setCell(7, 2, 'com.qa.labs.tests.HomePageTest')
+data.setCell(7, 3, 0);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'verifyHomePageHeader')
+data.setCell(8, 2, 'com.qa.labs.tests.HomePageTest')
+data.setCell(8, 3, 0);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'verifyLoggedInUserText')
+data.setCell(9, 2, 'com.qa.labs.tests.HomePageTest')
+data.setCell(9, 3, 0);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'verifyHomePageTitle')
+data.setCell(10, 2, 'com.qa.labs.tests.HomePageTest')
+data.setCell(10, 3, 0);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'verifyHomePageHeader')
+data.setCell(11, 2, 'com.qa.labs.tests.HomePageTest')
+data.setCell(11, 3, 0);
 window.suiteTableData['Hub_Spot_test_automation_Regression_Suite']= { tableData: data, tableDiv: 'times-div-Hub_Spot_test_automation_Regression_Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 38 seconds</span>
+              <span class="suite-total-time">Total running time: 18 seconds</span>
               <div id="times-div-Hub_Spot_test_automation_Regression_Suite">
               </div> <!-- times-div-Hub_Spot_test_automation_Regression_Suite -->
             </div> <!-- times-div -->
@@ -322,25 +562,26 @@ return data;
             <span class="header-content">Reporter output for Hub Spot test automation Regression Suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
-            <div class="reporter-method-div">
-              <span class="reporter-method-name">loginTest</span>
-              <div class="reporter-method-output-div">
-                <span class="reporter-method-output"><a href='D:\Users\asingh6766\eclipse-workspace\POMHybridSeleniumFramework\target\surefire-reports\failure_screenshots\loginTest_13_07_2020_01_59_51.png'> <img src='D:\Users\asingh6766\eclipse-workspace\POMHybridSeleniumFramework\target\surefire-reports\failure_screenshots\loginTest_13_07_2020_01_59_51.png' height='100' width='100'/> </a></span>
-              </div> <!-- reporter-method-output-div -->
-            </div> <!-- reporter-method-div -->
-            <div class="reporter-method-div">
-              <span class="reporter-method-name">verifyLoginPageTitle</span>
-              <div class="reporter-method-output-div">
-                <span class="reporter-method-output"><a href='D:\Users\asingh6766\eclipse-workspace\POMHybridSeleniumFramework\target\surefire-reports\failure_screenshots\verifyLoginPageTitle_13_07_2020_01_59_30.png'> <img src='D:\Users\asingh6766\eclipse-workspace\POMHybridSeleniumFramework\target\surefire-reports\failure_screenshots\verifyLoginPageTitle_13_07_2020_01_59_30.png' height='100' width='100'/> </a></span>
-              </div> <!-- reporter-method-output-div -->
-            </div> <!-- reporter-method-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Hub_Spot_test_automation_Regression_Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">0 ignored methods</span>
+            <span class="header-content">4 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.qa.labs.tests.HomePageTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">tearDown</span>
+                <br/>
+                <span class="ignored-method-name">tearDown</span>
+                <br/>
+                <span class="ignored-method-name">setUp</span>
+                <br/>
+                <span class="ignored-method-name">setUp</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="chronological-Hub_Spot_test_automation_Regression_Suite" class="panel">
@@ -349,30 +590,91 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
+              <div class="chronological-class-name">com.qa.labs.tests.HomePageTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">verifyLoggedInUserText</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyLoggedInUserText</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyHomePageHeader</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyHomePageHeader</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyHomePageTitle</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyHomePageTitle</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
               <div class="chronological-class-name">com.qa.labs.tests.LoginPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-test before -->
               <div class="configuration-test before">
                 <span class="method-name">setUp</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">verifySignUlLinkTest</span>
-                <span class="method-start">8714 ms</span>
+                <span class="method-start">10109 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
+                <span class="method-name">verifySignUlLinkTest</span>
+                <span class="method-start">10109 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qa.labs.tests.HomePageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
                 <img src="failed.png">
                 </img>
+                <span class="method-name">homeSetUp</span>
+                <span class="method-start">18202 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-class before">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">homeSetUp</span>
+                <span class="method-start">18202 ms</span>
+              </div> <!-- configuration-class before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qa.labs.tests.LoginPageTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
                 <span class="method-name">verifyLoginPageTitle</span>
-                <span class="method-start">16394 ms</span>
+                <span class="method-start">18242 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
+                <span class="method-name">verifyLoginPageTitle</span>
+                <span class="method-start">18242 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
                 <span class="method-name">loginTest</span>
-                <span class="method-start">27294 ms</span>
+                <span class="method-start">18307 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">loginTest</span>
+                <span class="method-start">18532 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">47966 ms</span>
+                <span class="method-start">19872 ms</span>
+              </div> <!-- configuration-test after -->
+              <div class="configuration-test after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">19877 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

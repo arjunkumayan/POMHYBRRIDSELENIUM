@@ -16,15 +16,17 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.safari.SafariDriver;
 
 import com.qa.labs.util.ElementUtil;
+import com.qa.labs.util.OptionsManager;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class BasePage {
 	
 	WebDriver driver;
-	Properties prop;
+	public Properties prop;
 	
 	public ElementUtil elementUtil;
+	public OptionsManager optionsManager;
 	
 	
 	public static ThreadLocal<WebDriver> tlDriver = new ThreadLocal<WebDriver>();
@@ -40,17 +42,30 @@ public class BasePage {
 	 */
 	public WebDriver init_driver(Properties prop) {	
 		
-		String browserName = prop.getProperty("browser");
+		String browserName = null;
+		if (System.getProperty("browser") == null) {
+			browserName = prop.getProperty("browser");
+		} else {
+			browserName = System.getProperty("browser");
+		}
+
+		System.out.println("Running on --->" + browserName + " browser");
+		
+		
+		
+		
+		optionsManager = new OptionsManager(prop);
+		//String browserName = prop.getProperty("browser");
 		
 		if(browserName.equalsIgnoreCase("chrome")) {
 			WebDriverManager.chromedriver().setup();
 			//driver = new ChromeDriver();
-			tlDriver.set(new ChromeDriver());
+			tlDriver.set(new ChromeDriver(optionsManager.getChromeOptions()));
 		}		
 		else if(browserName.equalsIgnoreCase("firefox")) {
 			WebDriverManager.firefoxdriver().setup();
 			//driver = new FirefoxDriver();	
-			tlDriver.set(new FirefoxDriver());
+			tlDriver.set(new FirefoxDriver(optionsManager.getFirefoxOptions()));
 		}
 		else if(browserName.equalsIgnoreCase("safari")){
 			WebDriverManager.getInstance(SafariDriver.class).setup();
@@ -70,15 +85,46 @@ public class BasePage {
 	}
 	
 	/**
-	 * this method is used to initilize the properties from com.config
+	 * this method is used to initilize the properties from com.config file on the basis of given env variable
 	 * @return prop
 	 */
 	
 	public Properties init_prop() {
+		
+		String path = null;
+		String env = null;
+		
 		prop = new Properties();
 		
 		try {
-			FileInputStream ip = new FileInputStream("./src/main/java/com/qa/labs/config/config.properties");
+			env= System.getProperty("env");
+			System.out.println("env value is---->"+env);
+			if(env ==null) {
+				path ="./src/main/java/com/qa/labs/config/config.properties";
+				
+			}
+			else {
+				switch(env) {
+				
+				case "qa":
+					path="./src/main/java/com/qa/labs/config/qa.config.properties";
+					break;
+				case "dev":
+					path="./src/main/java/com/qa/labs/config/dev.config.properties";
+					break;
+				case "stage":
+					path="./src/main/java/com/qa/labs/config/stage.config.properties";
+					break;
+					
+				default:
+					System.out.println("Please pass the correct env value---->"+env);
+					break;
+				}
+				
+			}
+			
+			
+			FileInputStream ip = new FileInputStream(path);
 		     prop.load(ip);
 		     
 		} catch (FileNotFoundException e) {
