@@ -9,7 +9,7 @@
         <!--  <listener class-name="com.qa.labs.listeners.TestAllureListener"/>-->
          
         <!-- <listener class-name="com.qa.labs.listeners.TesultsListener"/> -->
-		   <listener class-name="com.qa.labs.listeners.ScreenshotListener"/>
+		<!--    <listener class-name="com.qa.labs.listeners.ScreenshotListener"/> -->
 		 </listeners>
 		
 	<test name="Chrome test">
