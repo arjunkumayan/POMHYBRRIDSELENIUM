@@ -4,12 +4,12 @@
 <suite name="Hub Spot test automation Regression Suite" thread-count="3" parallel="tests" verbose ="3">
 
     <listeners> 
-        <!--  <listener class-name="com.qa.labs.listeners.ExtentReportListener"/>  -->
+          <listener class-name="com.qa.labs.listeners.ExtentReportListener"/>
          <!--  <listener class-name="com.qa.labs.listeners.pdfListener" />  -->
         <!--  <listener class-name="com.qa.labs.listeners.TestAllureListener"/>-->
          
         <!-- <listener class-name="com.qa.labs.listeners.TesultsListener"/> -->
-		   <listener class-name="com.qa.labs.listeners.ScreenshotListener"/>
+		 <listener class-name="com.qa.labs.listeners.ScreenshotListener"/>
 		 </listeners>
 		
 	<test name="login page test">
