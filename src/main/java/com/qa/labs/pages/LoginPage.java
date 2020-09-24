@@ -9,7 +9,7 @@ import com.qa.labs.util.ElementUtil;
 
 import io.qameta.allure.Step;
 
-public class LoginPage extends BasePage{
+public class LoginPage  extends BasePage{
 	
 	private WebDriver driver; // only for Login page,, don't want to change this driver
 	//public ElementUtil elementUtil;

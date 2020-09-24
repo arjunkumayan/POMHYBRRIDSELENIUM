@@ -40,11 +40,9 @@ public class ContactsPage extends BasePage {
 	
 	
 	public void createContact(String email, String firstName,String lastName,String jobTitle) {
-		
 		try {
 			Thread.sleep(3000);
 		} catch (InterruptedException e) {
-			
 			e.printStackTrace();
 		}
 //		elementUtil.waitForElementToBeVisible(createContactPrimary, 20);

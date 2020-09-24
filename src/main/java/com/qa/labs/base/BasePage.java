@@ -94,8 +94,7 @@ public class BasePage {
 		String path = null;
 		String env = null;
 		
-		prop = new Properties();
-		
+		prop = new Properties();		
 		try {
 			env= System.getProperty("env");
 			System.out.println("env value is---->"+env);
